@@ -1,5 +1,7 @@
 # Continuous Integration with Travis CI
 
+BUILD STATUS: [![Build Status](https://travis-ci.org/brainyandbrown/fifty_shades_of_testing.svg)](https://travis-ci.org/brainyandbrown/fifty_shades_of_testing)
+
 Travis CI allows us to run tests on our builds everytime we push to github. This
 is very useful in group settings where we can run tests against pull requests or
 easily display the current status of a project.
@@ -42,7 +44,7 @@ PostgreSQL is started on boot, binds to `127.0.0.1` and requires authentication 
 # .travis.yml
 env:
   - PG_USERNAME='postgres'
-``` 
+```
 
 If we want to run tests that require a Web browser
 
@@ -84,7 +86,7 @@ Using ENV variables and before_script steps
 
 [secure env variables](http://about.travis-ci.org/docs/user/build-configuration/#Secure-environment-variables)
 
-## 
+##
 
 On Travis, flick the switch to `on` for a project repo, then push again to Github
 
