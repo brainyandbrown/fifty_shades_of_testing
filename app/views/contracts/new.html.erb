@@ -1,3 +1,4 @@
+
 <form id="new-contract">
   <label for="user-name">Name</label>
   <input id="user-name" type="text" name="user-name">
@@ -8,3 +9,13 @@
   <span id="warning-terms" class="hidden error">You must check the terms of service.</span>
   <button>Sign Contract</button>
 </form>
+
+<script>
+  $('#new-contract').on('click', function(e){
+      e.preventDefault();
+      var contractSigned = $("#terms-of-service").is(":checked");
+      if ( !contractSigned) {
+        $("#warning-terms").removeClass('hidden');
+      }
+  })
+</script>
